@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* -- Colors -- */
+  --primary: #28cb8b;
+  --info: #2194f3;
+  --white: white;
+  --neutral-1: #263238;
+  --neutral-2: #4d4d4d;
+  --neutral-3: #717171;
+  --neutral-4: #89939e;
+  --neutral-5: #abbed1;
+  --neutral-6: #f5f7fa;
+  --color-shade-1: #43a046;
+  --color-shade-2: #388e3b;
+  --color-shade-3: #237d31;
+  --color-shade-4: #1b5e1f;
+  --color-shade-5: #103e13;
+  --color-tint-1: #66bb69;
+  --color-tint-2: #81c784;
+  --color-tint-3: #a5d6a7;
+  --color-tint-4: #c8e6c9;
+  --color-tint-5: #e8f5e9;
+  --action-1: #fbc02d;
+  --action-2: #e53835;
+  --action-3: #2e7d31;
+
+  /* -- Fonts -- */
+  --ff-serif: "Semi Bold", serif;
+  --ff-sans-serif: "Regular", sans-serif;
+
+  --f-heading-1: 64px/76px var(--ff-serif);
+  --f-heading-2: 36px/44px var(--ff-serif);
+  --f-heading-3: 28px/36px var(--ff-serif);
+  --f-heading-4: 20px/28px var(--ff-serif);
+
+  --f-body-1: 18px/28px var(--ff-sans-serif);
+  --f-body-2: 16px/24px var(--ff-sans-serif);
+  --f-body-3: 14px/20px var(--ff-sans-serif);
+  --f-body-4: 12px/16px var(--ff-sans-serif);
+
+  font: var(--body-1);
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+.container {
+  width: 1216px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.logo {
+  display: flex;
+  gap: 5px;
+}
+
+.menu__b {
+  font: var();
+  color: var(--neutral-2);
+}
+
+.menu {
+  display: flex;
+  gap: 16px;
+}
+
+.header__menu {
+  display: flex;
+  gap: 44px;
+  align-items: center;
+  padding: 20px 0;
+}
