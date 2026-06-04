@@ -55,6 +55,13 @@
   z-index: 1;
 }
 
+.header__menu {
+  display: flex;
+  gap: 44px;
+  align-items: center;
+  padding: 20px 0;
+}
+
 .container {
   width: 1216px;
   margin: 0 auto;
@@ -67,19 +74,13 @@
   gap: 5px;
 }
 
-.menu__b {
-  font: var();
-  color: var(--neutral-2);
-}
-
 .menu {
   display: flex;
   gap: 16px;
 }
 
-.header__menu {
-  display: flex;
-  gap: 44px;
-  align-items: center;
-  padding: 20px 0;
+.menu__b {
+  font: var();
+  color: var(--neutral-2);
 }
+
