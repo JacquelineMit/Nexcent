@@ -95,6 +95,12 @@
   border-radius: 5%;
 }
 
+.home-section {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
 .hero-section {
   display: flex;
   background-color: var(--neutral-6);
@@ -114,4 +120,34 @@
   color: var(--neutral-3);
   font: var(--f-body-4);
   margin-bottom: 22px;
+}
+
+.clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clients__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text__1 {
+  color: var(--neutral-2);
+  font: var(--f-heading-4);
+  margin-bottom: 5px;
+}
+
+.text__2 {
+  color: var(--neutral-3);
+  font: var(--f-body-4);
+  margin-bottom: 11px;
+}
+
+.clients__logo {
+  display: flex;
+  gap: 94px;
+  padding: 27px 0;
 }
