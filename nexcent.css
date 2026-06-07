@@ -8,7 +8,7 @@
 
 :root {
   /* -- Colors -- */
-  --primary: #28cb8b;
+  --primary: #4caf4f;
   --info: #2194f3;
   --white: white;
   --neutral-1: #263238;
@@ -32,8 +32,8 @@
   --action-3: #2e7d31;
 
   /* -- Fonts -- */
-  --ff-serif: "Semi Bold", serif;
-  --ff-sans-serif: "Regular", sans-serif;
+  --ff-serif: "Inter", serif;
+  --ff-sans-serif: "Inter", sans-serif;
 
   --f-heading-1: 64px/76px var(--ff-serif);
   --f-heading-2: 36px/44px var(--ff-serif);
@@ -84,3 +84,34 @@
   color: var(--neutral-2);
 }
 
+.button {
+  background-color: var(--primary);
+  border: none;
+  padding: 9px 23px;
+  color: var(--white);
+  font: var(--f-body-4) medium;
+  font-size: small;
+  text-decoration: none;
+  border-radius: 5%;
+}
+
+.hero-section {
+  display: flex;
+  background-color: var(--neutral-6);
+  height: 417px;
+  gap: 72px;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section__frame__text-title {
+  color: var(--neutral-2);
+  font: var(--f-heading-2);
+  margin-bottom: 11px;
+}
+
+.hero-section__frame__text {
+  color: var(--neutral-3);
+  font: var(--f-body-4);
+  margin-bottom: 22px;
+}
