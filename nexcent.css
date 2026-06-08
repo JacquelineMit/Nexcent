@@ -179,4 +179,5 @@
   width: 208px;
   height: 183px;
   text-align: center;
+  box-shadow: 1px 1px 3px var(--neutral-3);
 }
