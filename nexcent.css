@@ -151,3 +151,32 @@
   gap: 94px;
   padding: 27px 0;
 }
+
+.community__text {
+  text-align: center;
+}
+
+.text__com-title {
+  color: var(--neutral-2);
+  font: var(--f-heading-4);
+  margin-bottom: 6px;
+}
+
+.text__com {
+  color: var(--neutral-3);
+  font: var(--f-body-4);
+  margin-bottom: 11px;
+}
+
+.community__frame {
+  display: flex;
+  gap: 89px;
+  justify-content: center;
+  padding: 8px 100px;
+}
+
+.community__frame__block {
+  width: 208px;
+  height: 183px;
+  text-align: center;
+}
