@@ -247,3 +247,11 @@
   font: var(--f-body-4);
   margin-bottom: 22px;
 }
+
+.customer {
+  display: flex;
+  gap: 54px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 33px;
+}
