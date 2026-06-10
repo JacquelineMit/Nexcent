@@ -254,4 +254,45 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 33px;
+  background-color: var(--neutral-6);
+}
+
+.customer__frame__text__info {
+  color: var(--neutral-3);
+  font: var(--f-body-4);
+  margin-bottom: 11px;
+}
+
+.smith__title {
+  color: var(--primary);
+  font: var(--body-1);
+  margin-bottom: 5px;
+}
+
+.smith__text {
+  color: var(--neutral-4);
+  font: var(--f-body-4);
+  margin-bottom: 22px;
+}
+
+.customer__frame__logo {
+  display: flex;
+  gap: 28px;
+}
+
+.customer__frame__logo__ss {
+  display: flex;
+  align-items: center;
+}
+
+.ss {
+  color: var(--primary);
+  font: var(--body-1);
+  text-decoration: none;
+}
+
+.customer__img {
+  width: 226px;
+  height: 226px;
+  align-items: center;
 }
