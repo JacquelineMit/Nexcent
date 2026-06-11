@@ -101,6 +101,10 @@
   margin-bottom: 26px;
 }
 
+.hero-section__frame__text-title > strong {
+  color: var(--primary);
+}
+
 .hero-section {
   display: flex;
   background-color: var(--neutral-6);
@@ -171,18 +175,18 @@
 }
 
 .community__frame {
-  display: flex;
-  gap: 89px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 90px;
   justify-content: center;
   padding: 8px 100px;
 }
 
 .community__frame__block {
-  width: 208px;
-  height: 183px;
   text-align: center;
   box-shadow: 1px 1px 1px var(--neutral-6);
-  border-radius: 5%;
+  border-radius: 5px;
+  padding: 16px 24px;
 }
 
 .block__img {
@@ -248,6 +252,10 @@
   margin-bottom: 22px;
 }
 
+.button__svg {
+  stroke: var(--white);
+}
+
 .customer {
   display: flex;
   gap: 54px;
@@ -257,7 +265,7 @@
   background-color: var(--neutral-6);
 }
 
-.customer__frame__text__info {
+di .customer__frame__text__info {
   color: var(--neutral-3);
   font: var(--f-body-4);
   margin-bottom: 11px;
