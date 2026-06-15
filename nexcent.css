@@ -266,7 +266,7 @@
   background-color: var(--neutral-6);
 }
 
-di .customer__frame__text__info {
+.customer__frame__text__info {
   color: var(--neutral-3);
   font: var(--f-body-4);
   margin-bottom: 11px;
