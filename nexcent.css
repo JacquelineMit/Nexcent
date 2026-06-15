@@ -190,7 +190,7 @@
 
 .community__frame__block {
   text-align: center;
-  box-shadow: 1px 1px 1px var(--neutral-6);
+  box-shadow: 1px 1px 2px var(--neutral-6);
   border-radius: 5px;
   padding: 16px 24px;
 }
@@ -304,4 +304,33 @@
   width: 226px;
   height: 226px;
   align-items: center;
+}
+
+.community-updates__container {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 61px;
+}
+
+.community-updates__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.community-updates__text__title {
+  color: var(--neutral-2);
+  font: var(--f-heading-4);
+  margin-bottom: 6px;
+}
+
+.community-updates__text__dop {
+  color: var(--neutral-3);
+  font: var(--f-body-4);
+  margin-bottom: 6px;
+  alignment-baseline: central;
 }
