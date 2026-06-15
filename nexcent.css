@@ -95,17 +95,16 @@
   border-radius: 5%;
 }
 
-.home-section {
+.main {
   display: flex;
   flex-direction: column;
-  margin-bottom: 26px;
 }
 
 .hero-section__frame__text-title > strong {
   color: var(--primary);
 }
 
-.hero-section {
+.hero-section__container {
   display: flex;
   background-color: var(--neutral-6);
   height: 417px;
@@ -127,7 +126,7 @@
   margin-bottom: 22px;
 }
 
-.clients {
+.clients__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -156,6 +155,13 @@
   display: flex;
   gap: 94px;
   padding: 27px 0;
+}
+
+.community__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 28px;
 }
 
 .community__text {
@@ -212,7 +218,7 @@
   flex-direction: column;
 }
 
-.unlock {
+.section-unlock__container {
   display: flex;
   gap: 34px;
   justify-content: center;
@@ -232,7 +238,7 @@
   margin-bottom: 22px;
 }
 
-.calender {
+.calender-section__container {
   display: flex;
   gap: 34px;
   justify-content: center;
@@ -256,7 +262,7 @@
   stroke: var(--white);
 }
 
-.customer {
+.customer-section__container {
   display: flex;
   gap: 54px;
   justify-content: center;
