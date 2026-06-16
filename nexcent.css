@@ -332,7 +332,7 @@
   color: var(--neutral-3);
   font: var(--f-body-4);
   margin-bottom: 6px;
-  alignment-baseline: central;
+  text-align: center;
 }
 
 .community-updates__blocks {
@@ -362,5 +362,24 @@
 .block__ss {
   color: var(--primary);
   font: var(--f-body-3);
+  text-align: center;
+}
+
+.block-img {
+  border-radius: 5%;
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 22px 0;
+}
+
+.frame__text {
+  color: var(--neutral-1);
+  font: var(--f-heading-2);
+  margin-bottom: 22px;
   text-align: center;
 }
