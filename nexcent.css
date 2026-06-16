@@ -334,3 +334,33 @@
   margin-bottom: 6px;
   alignment-baseline: central;
 }
+
+.community-updates__blocks {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 61px;
+}
+
+.block {
+  width: 220px;
+  height: 123px;
+  border-radius: 5%;
+  background-color: var(--neutral-6);
+  margin-top: -70px;
+  position: relative;
+  padding: 11px 11px;
+  box-shadow: 0px 5px 11px var(--neutral-5);
+}
+
+.block__text {
+  color: var(--neutral-3);
+  font: var(--f-body-3);
+  text-align: center;
+  margin-bottom: 11px;
+}
+
+.block__ss {
+  color: var(--primary);
+  font: var(--f-body-3);
+  text-align: center;
+}
