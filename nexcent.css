@@ -114,6 +114,10 @@
   margin-bottom: 28px;
 }
 
+.hero-section__container-negativ {
+  display: none;
+}
+
 .hero-section__frame__text-title {
   color: var(--neutral-2);
   font: var(--f-heading-1);
