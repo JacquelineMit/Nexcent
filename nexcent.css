@@ -126,6 +126,25 @@
   margin-bottom: 22px;
 }
 
+.slads {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+}
+
+.slads__btn {
+  background-color: var(--primary);
+  border-radius: 100px;
+  width: 7px;
+  height: 7px;
+  border: 0px;
+}
+
+.slads__btn-negativ {
+  opacity: 0.3;
+}
+
 .clients__container {
   display: flex;
   flex-direction: column;
