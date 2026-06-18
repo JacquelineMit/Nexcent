@@ -414,17 +414,24 @@
 }
 
 .community-updates__blocks {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   margin-bottom: 61px;
+}
+
+.update-card__img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
 }
 
 .block {
   display: flex;
   flex-direction: column;
-  width: 220px;
-  height: 123px;
-  border-radius: 5%;
+  width: 80%;
+  min-height: 123px;
+  border-radius: 8px;
   background-color: var(--neutral-6);
   margin-top: -70px;
   margin-left: auto;
