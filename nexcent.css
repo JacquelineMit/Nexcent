@@ -458,8 +458,8 @@
   margin-top: auto;
 }
 
-.block-img {
-  border-radius: 5%;
+.update-card__img {
+  border-radius: 8px;
 }
 
 .frame {
