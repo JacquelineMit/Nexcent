@@ -85,6 +85,10 @@
 }
 
 .button {
+  --icon-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
   background-color: var(--primary);
   border: none;
   padding: 9px 23px;
@@ -93,6 +97,14 @@
   font-size: small;
   text-decoration: none;
   border-radius: 5%;
+}
+
+.button__svg {
+  display: flex;
+  align-items: center;
+  height: var(--icon-size);
+  width: var(--icon-size);
+  stroke: var(--white);
 }
 
 .main {
@@ -322,10 +334,6 @@
   color: var(--neutral-3);
   font: var(--f-body-4);
   margin-bottom: 22px;
-}
-
-.button__svg {
-  stroke: var(--white);
 }
 
 .customer-section__container {
