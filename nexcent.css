@@ -533,10 +533,13 @@
   gap: 6px;
 }
 
+.company__social {
+  margin-right: 121px;
+}
+
 .footer-big__links {
   margin-bottom: 44px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   gap: 20px;
 }
 
