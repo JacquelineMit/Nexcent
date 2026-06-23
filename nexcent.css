@@ -36,14 +36,19 @@
   --ff-sans-serif: "Inter", sans-serif;
 
   --f-heading-1: 600 64px/76px var(--ff-serif);
-  --f-heading-2: 36px/44px var(--ff-serif);
-  --f-heading-3: 28px/36px var(--ff-serif);
-  --f-heading-4: 20px/28px var(--ff-serif);
+  --f-heading-2: 600 36px/44px var(--ff-serif);
+  --f-heading-3: 600 28px/36px var(--ff-serif);
+  --f-heading-4: 600 20px/28px var(--ff-serif);
 
   --f-body-1: 18px/28px var(--ff-sans-serif);
   --f-body-2: 16px/24px var(--ff-sans-serif);
   --f-body-3: 14px/20px var(--ff-sans-serif);
   --f-body-4: 12px/16px var(--ff-sans-serif);
+
+  --f-body-5: 500 18px/28px var(--ff-sans-serif);
+  --f-body-6: 500 16px/24px var(--ff-sans-serif);
+  --f-body-7: 500 14px/20px var(--ff-sans-serif);
+  --f-body-8: 500 12px/16px var(--ff-sans-serif);
 
   font: var(--body-1);
 }
