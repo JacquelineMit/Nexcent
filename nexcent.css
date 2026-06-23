@@ -110,7 +110,7 @@
 
 .link {
   text-decoration: none;
-  font: var();
+  font: var(--f-body-8);
   color: var(--neutral-2);
 }
 
