@@ -156,7 +156,11 @@
   margin-bottom: 28px;
 }
 
-.hero-section__container-negativ {
+.slides--active {
+  display: block;
+}
+
+.slides {
   display: none;
 }
 
@@ -191,6 +195,10 @@
 
 .slider-bullets__bullet--inactive {
   opacity: 0.3;
+}
+
+.slider-bullets__bullet--active {
+  opacity: 1;
 }
 
 .clients__container {
