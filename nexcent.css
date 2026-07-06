@@ -17,6 +17,7 @@
   --neutral-4: #89939e;
   --neutral-5: #abbed1;
   --neutral-6: #f5f7fa;
+  --gray-300: #d9dbe1;
   --color-shade-1: #43a046;
   --color-shade-2: #388e3b;
   --color-shade-3: #237d31;
@@ -573,4 +574,30 @@
   color: var(--white);
   font: var(--f-body-3);
   margin-bottom: 16px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+}
+
+.input__field {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 6px 8px;
+  border: none;
+  border-radius: 5px;
+  font: var(--f-body-4);
+}
+
+.input__field:empty {
+  color: var(--gray-300);
+}
+
+.input__btn {
+  background: none;
+  border: none;
+  width: 12px;
+  height: 12px;
+  margin-left: -20px;
 }
