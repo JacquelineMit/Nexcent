@@ -105,10 +105,16 @@
   padding-left: 187px;
 }
 
-.link {
+.menu__link {
+  margin: -8px;
+  padding: 8px;
   text-decoration: none;
   font: var(--f-body-8);
   color: var(--neutral-2);
+}
+
+.menu__link:hover {
+  text-decoration: underline;
 }
 
 .button {
@@ -183,11 +189,12 @@
 }
 
 .slider-bullets__bullet {
+  --size: 8px;
   background-color: var(--primary);
-  border-radius: 100px;
-  width: 7px;
-  height: 7px;
-  border: 0px;
+  border-radius: 100%;
+  width: var(--size);
+  height: var(--size);
+  border: none;
   opacity: 0.3;
 }
 
