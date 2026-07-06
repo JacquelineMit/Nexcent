@@ -504,7 +504,7 @@
   border-radius: 8px;
 }
 
-.frame {
+.frame__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -519,10 +519,10 @@
   text-align: center;
 }
 
-.footer-big {
+.footer-big__container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 87px;
   padding-top: 44px;
   padding-left: 114px;
