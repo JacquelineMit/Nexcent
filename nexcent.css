@@ -188,9 +188,6 @@
   width: 7px;
   height: 7px;
   border: 0px;
-}
-
-.slider-bullets__bullet--inactive {
   opacity: 0.3;
 }
 

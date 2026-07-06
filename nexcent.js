@@ -10,7 +10,6 @@ for (let index = 0; index < buttons.length; index++) {
     for (let index = 0; index < buttons.length; index++) {
       slides[index].classList.remove("slider__item--active");
       buttons[index].classList.remove("slider-bullets__bullet--active");
-      buttons[index].classList.remove("slider-bullets__bullet--inactive");
     }
 
     // Отображаем целевой элемент
