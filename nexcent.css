@@ -290,6 +290,30 @@
   margin-bottom: 16px;
 }
 
+.scroll {
+  display: none;
+}
+
+.scroll--active {
+  display: block;
+}
+
+.scroll-btn {
+  background-color: var(--primary);
+  color: var(--white);
+  font: var(--f-body-4);
+  position: fixed;
+  border-radius: 50%;
+  border: none;
+  width: 55px;
+  height: 55px;
+  bottom: 25px;
+  right: 30px;
+  z-index: 99;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
 .section-unlock__container {
   display: flex;
   gap: 34px;

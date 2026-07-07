@@ -2,7 +2,7 @@
 const slides = document.querySelectorAll(".slides");
 const buttons = document.querySelectorAll(".slider-bullets__bullet");
 
-// Добавляем обработчик для каждой кнопки 
+// Добавляем обработчик для каждой кнопки
 for (let index = 0; index < buttons.length; index++) {
   const elements = buttons[index];
   elements.addEventListener("click", function () {
@@ -17,3 +17,18 @@ for (let index = 0; index < buttons.length; index++) {
     buttons[index].classList.add("slider-bullets__bullet--active");
   });
 }
+
+const scroll_btn = document.querySelector(".scroll-btn");
+scroll_btn.addEventListener("click", function () {
+  window.scrollTo( {
+    top = 0,
+    behavior = "smooth"
+  })
+})
+
+window.onscroll = function() {
+  const scrolls = document.querySelector('.scroll');
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    scrolls.classList.add("slides--active");
+  }
+};
