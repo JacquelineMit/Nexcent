@@ -65,8 +65,14 @@
   display: flex;
   gap: 44px;
   align-items: center;
-  padding: 20px 100px;
+  padding: 20px 0;
   justify-content: center;
+  transition: 0.5s padding;
+  will-change: padding;
+}
+
+.header--active .header__menu {
+  padding: 10px 0;
 }
 
 .container {

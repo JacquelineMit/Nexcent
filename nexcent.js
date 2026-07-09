@@ -26,15 +26,20 @@ scroll_btn.addEventListener("click", function () {
   });
 });
 
-const scrolls = document.querySelector(".scroll");
+const scrolls = document.getElementById("scroll-btn");
+
+const header = document.getElementById("header");
+
 window.addEventListener("scroll", function () {
   const pageHeight = window.innerHeight;
   if (
     document.body.scrollTop > pageHeight ||
     document.documentElement.scrollTop > pageHeight
   ) {
+    header.classList.add("header--active");
     scrolls.classList.add("scroll--active");
   } else {
+    header.classList.remove("header--active");
     scrolls.classList.remove("scroll--active");
   }
 });
