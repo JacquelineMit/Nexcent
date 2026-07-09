@@ -27,7 +27,6 @@ scroll_btn.addEventListener("click", function () {
 });
 
 const scrolls = document.getElementById("scroll-btn");
-
 const header = document.getElementById("header");
 
 window.addEventListener("scroll", function () {
