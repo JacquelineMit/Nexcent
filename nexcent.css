@@ -305,14 +305,13 @@
 }
 
 .scroll-btn {
-  background-color: var(--primary);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--primary);
   font: var(--f-body-4);
   border-radius: 50%;
-  border: 2px solid white;
+  border: 2px solid var(--primary);
   width: 55px;
   height: 55px;
-  z-index: 99;
   cursor: pointer;
   transition: all 0.3s ease;
 }
