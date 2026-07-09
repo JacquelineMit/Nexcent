@@ -20,15 +20,21 @@ for (let index = 0; index < buttons.length; index++) {
 
 const scroll_btn = document.querySelector(".scroll-btn");
 scroll_btn.addEventListener("click", function () {
-  window.scrollTo( {
-    top = 0,
-    behavior = "smooth"
-  })
-})
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
 
-window.onscroll = function() {
-  const scrolls = document.querySelector('.scroll');
-  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-    scrolls.classList.add("slides--active");
+const scrolls = document.querySelector(".scroll");
+window.addEventListener("scroll", function () {
+  const pageHeight = window.innerHeight;
+  if (
+    document.body.scrollTop > pageHeight ||
+    document.documentElement.scrollTop > pageHeight
+  ) {
+    scrolls.classList.add("scroll--active");
+  } else {
+    scrolls.classList.remove("scroll--active");
   }
-};
+});
