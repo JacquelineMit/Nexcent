@@ -57,8 +57,8 @@
 .header {
   position: sticky;
   top: 0;
-  background-color: white;
   z-index: 1;
+  height: 74px;
 }
 
 .header__menu {
@@ -69,6 +69,7 @@
   justify-content: center;
   transition: 0.5s padding;
   will-change: padding;
+  background-color: white;
 }
 
 .header--active .header__menu {
@@ -297,15 +298,17 @@
 }
 
 .scroll {
+  pointer-events: none;
   position: fixed;
   bottom: 25px;
   right: 30px;
   transition: 0.5s;
   opacity: 0;
-  transform: translateX(100px);
+  /* transform: translateX(100px); */
 }
 
 .scroll--active {
+  pointer-events: all;
   opacity: 1;
   transform: translateX(0px);
 }
