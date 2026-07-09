@@ -304,7 +304,7 @@
   font: var(--f-body-4);
   position: fixed;
   border-radius: 50%;
-  border: none;
+  border: 2px solid white;
   width: 55px;
   height: 55px;
   bottom: 25px;
