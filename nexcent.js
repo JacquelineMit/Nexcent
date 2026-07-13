@@ -42,3 +42,6 @@ window.addEventListener("scroll", function () {
     scrolls.classList.remove("scroll--active");
   }
 });
+
+const button_in = document.querySelector("register-btn");
+const button_off = document.querySelector(".modal__btn");

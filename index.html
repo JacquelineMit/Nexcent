@@ -63,7 +63,7 @@
                 <img />
               </div>
             </div>
-            <button class="button">
+            <button id="register-btn" class="button">
               Register Now
               <svg class="button__svg">
                 <use href="#arrow-right"></use>
@@ -440,6 +440,24 @@
 
     <div id="scroll-btn" class="scroll scroll--active" >
       <button class="scroll-btn" tabindex="-1">Наверх</button>
+    </div>
+    <div id="modal" class="modal" aria-hidden="true">
+      <button class="modal__btn">X</button>
+      <div class="modal__section">
+        <p class="modal__section-title">Registration</p>
+        <div>
+          <label class="label-text" for="user-name">
+            Name:
+            <input id="user-name" type="text" class="label-input"/>
+          </label>
+        </div>
+        <div>
+          <label class="label-text" for="user-email">
+            Email:
+            <input id="user-email" type="text" class="label-input"/>
+          </label>
+        </div>
+        <button class="modal__section-btn">Register</button>
     </div>
   </body>
 </html>

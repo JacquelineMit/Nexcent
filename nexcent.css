@@ -636,3 +636,67 @@
   height: 12px;
   margin-left: -20px;
 }
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 65%;
+  background-color: var(--white);
+  border-radius: 5%;
+  border: 2px solid var(--primary);
+  padding: 30px 30px;
+  margin: 100px 400px;
+}
+
+.modal--active {
+  display: block;
+}
+
+.modal__btn {
+  background-color: var(--white);
+  color: var(--primary);
+  font: var(--f-heading-4);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--primary);
+}
+
+.modal__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 30px;
+}
+
+.modal__section-title {
+  font: var(--f-heading-2);
+  color: var(--neutral-2);
+}
+
+.label-text {
+  font: var(--f-body-3);
+  color: var(--neutral-3);
+}
+
+.label-input {
+  background-color: var(--neutral-6);
+  border: 1px solid var(--primary);
+  border-radius: 5%;
+}
+
+.modal__section-btn {
+  background-color: var(--primary);
+  border: none;
+  padding: 9px 23px;
+  color: var(--white);
+  font: var(--f-body-4) medium;
+  font-size: small;
+  text-decoration: none;
+  border-radius: 5px;
+}
