@@ -43,5 +43,13 @@ window.addEventListener("scroll", function () {
   }
 });
 
-const button_in = document.querySelector("register-btn");
+const button_in = document.getElementById("register-btn");
 const button_off = document.querySelector(".modal__btn");
+const modal = document.querySelector(".modal");
+button_in.addEventListener("click", function () {
+  modal.classList.add("modal--active");
+});
+
+button_off.addEventListener("click", function () {
+  modal.classList.remove("modal--active");
+});
