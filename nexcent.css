@@ -679,17 +679,6 @@
   color: var(--neutral-2);
 }
 
-.label-text {
-  font: var(--f-body-3);
-  color: var(--neutral-3);
-}
-
-.label-input {
-  background-color: var(--neutral-6);
-  border: 1px solid var(--primary);
-  border-radius: 5%;
-}
-
 .modal__section-btn {
   background-color: var(--primary);
   border: none;
@@ -699,4 +688,17 @@
   font-size: small;
   text-decoration: none;
   border-radius: 5px;
+}
+
+.input-register {
+  background-color: var(--neutral-6);
+  color: var(--primary);
+  padding: 6px 8px;
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  font: var(--f-body-3);
+}
+
+.input-register:empty {
+  color: var(--neutral-2);
 }
