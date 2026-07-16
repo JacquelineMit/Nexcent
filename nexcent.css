@@ -651,7 +651,7 @@
   margin: 100px 400px;
 }
 
-.modal--active {
+.modal[aria-hidden="false"] {
   display: block;
 }
 

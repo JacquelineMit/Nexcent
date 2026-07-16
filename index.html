@@ -441,12 +441,13 @@
     <div id="scroll-btn" class="scroll scroll--active" >
       <button class="scroll-btn" tabindex="-1">Наверх</button>
     </div>
+
     <div id="modal" class="modal" aria-hidden="true">
-      <button class="modal__btn">X</button>
+      <button class="modal__btn" aria-label="Close">X</button>
       <div class="modal__section">
         <p class="modal__section-title">Registration</p>
         <div>
-          <input class="input-register" type="name" placeholder="Your name"/>
+          <input id="your-name" class="input-register" type="name" placeholder="Alex"/>
         </div>
         <div>
           <input class="input-register" type="email" placeholder="Your email address"/>
