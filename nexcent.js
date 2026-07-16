@@ -53,3 +53,32 @@ button_in.addEventListener("click", function () {
 button_off.addEventListener("click", function () {
   modal.setAttribute("aria-hidden", "true");
 });
+
+const registerBtn = document.getElementById("modal-btn");
+registerBtn.addEventListener("click", function () {
+  validateName();
+  const emailEl = document.getElementById("your-email");
+});
+
+function validateName() {
+  const nameEl = document.getElementById("your-name");
+  const length = nameEl.value.length;
+  const errorTextEl = document.getElementById("error-text");
+
+  let errorName = "";
+  if (length <= 2) {
+    errorName = "Error! Your name is small";
+  } else if (length >= 100) {
+    errorName = "Error! Your name is big";
+  }
+
+  errorTextEl.classList.add("error-text--active");
+  errorTextEl.innerText = errorName;
+}
+
+// 1. сделать валидацию почты с помощью RegExp (тырнет в помощь)
+// 2. сделать alert() с текстом при прохождении валидации
+// 3. сделать рамку поля красным для каждого поля, если валидация провалена
+// 4. Вынести тексты ошибок в объекты и использовать вместо строк в самом коде
+// *5. Подключить и использовать библиотеку micromodal или использовать нативный тег <dialog>
+// *6. Начать делать адаптацию (сделать хотя бы одну секцию)

@@ -642,8 +642,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 40%;
-  height: 65%;
+  min-width: 500px;
+  min-height: 200px;
   background-color: var(--white);
   border-radius: 5%;
   border: 2px solid var(--primary);
@@ -701,4 +701,14 @@
 
 .input-register:empty {
   color: var(--neutral-2);
+}
+
+.error-text {
+  display: none;
+  font: var(--f-heading-4);
+  color: var(--action-2);
+}
+
+.error-text--active {
+  display: block;
 }
