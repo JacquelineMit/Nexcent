@@ -68,12 +68,20 @@ function validateName() {
   let errorName = "";
   if (length <= 2) {
     errorName = "Error! Your name is small";
+    nameEl.classList.add("input-register.alt-color");
   } else if (length >= 100) {
     errorName = "Error! Your name is big";
   }
 
   errorTextEl.classList.add("error-text--active");
   errorTextEl.innerText = errorName;
+}
+
+function validateEmail() {
+  const emailEl = document.getElementById("your-email");
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  const errorTextEl = document.getElementById("error-text");
+  const value = emailEl.value;
 }
 
 // 1. сделать валидацию почты с помощью RegExp (тырнет в помощь)

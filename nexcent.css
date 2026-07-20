@@ -712,3 +712,7 @@
 .error-text--active {
   display: block;
 }
+
+.input-register.alt-color {
+  border-color: var(--action-2);
+}
