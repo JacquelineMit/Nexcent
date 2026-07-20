@@ -699,20 +699,20 @@
   font: var(--f-body-3);
 }
 
+.input-register.invalid {
+  border: 1px solid var(--action-2);
+}
+
 .input-register:empty {
   color: var(--neutral-2);
 }
 
 .error-text {
   display: none;
-  font: var(--f-heading-4);
+  font: var(--f-body-7);
   color: var(--action-2);
 }
 
 .error-text--active {
   display: block;
-}
-
-.input-register.alt-color {
-  border-color: var(--action-2);
 }
