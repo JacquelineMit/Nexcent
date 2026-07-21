@@ -60,7 +60,7 @@ registerBtn.addEventListener("click", function () {
   const isEmailValid = validateEmail();
 
   if (isNameValid && isEmailValid) {
-    alert("Валидация прошла успешно!");
+    alert("Validation was successful!");
   }
 });
 
