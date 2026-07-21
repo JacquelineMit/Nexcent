@@ -56,8 +56,12 @@ button_off.addEventListener("click", function () {
 
 const registerBtn = document.getElementById("modal-btn");
 registerBtn.addEventListener("click", function () {
-  validateName();
-  validateEmail();
+  const isNameValid = validateName();
+  const isEmailValid = validateEmail();
+
+  if (isNameValid && isEmailValid) {
+    alert("Валидация прошла успешно!");
+  }
 });
 
 function validateName() {
@@ -67,17 +71,20 @@ function validateName() {
 
   let errorName = "";
   if (length <= 2) {
-    errorName = "*Error! Your name is small";
+    errorName = "*Error! Your name is small!";
     nameEl.classList.add("invalid");
   } else if (length >= 100) {
-    errorName = "*Error! Your name is big";
+    errorName = "*Error! Your name is big!";
     nameEl.classList.add("invalid");
   } else {
-    alert("Валидация пройдена! Данные корректны.");
+    nameEl.classList.remove("invalid");
   }
 
   errorTextEl.classList.add("error-text--active");
   errorTextEl.innerText = errorName;
+
+  const isValid = errorName === "";
+  return isValid;
 }
 
 function validateEmail() {
@@ -89,16 +96,20 @@ function validateEmail() {
 
   let errorName = "";
   if (value.length === 0) {
-    errorName = "Пожалуйста, введите адрес электронной почты.";
+    errorName = "*Please enter your email!";
     emailEl.classList.add("invalid");
   } else if (!emailRegex.test(value)) {
-    errorName = "Неверный формат электронной почты.";
+    errorName = "*Incorrect email format!";
     emailEl.classList.add("invalid");
   } else {
-    alert("Валидация пройдена! Данные корректны.");
+    emailEl.classList.remove("invalid");
   }
+
   errorTextEl.classList.add("error-text--active");
   errorTextEl.innerText = errorName;
+
+  const isValid = errorName === "";
+  return isValid;
 }
 
 // 1. !!сделать валидацию почты с помощью RegExp (тырнет в помощь)
