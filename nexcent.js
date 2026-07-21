@@ -57,7 +57,7 @@ button_off.addEventListener("click", function () {
 const registerBtn = document.getElementById("modal-btn");
 registerBtn.addEventListener("click", function () {
   validateName();
-  const emailEl = document.getElementById("your-email");
+  validateEmail();
 });
 
 function validateName() {
@@ -82,7 +82,7 @@ function validateName() {
 
 function validateEmail() {
   const emailEl = document.getElementById("your-email");
-  const errorTextEl = document.getElementById("error-text");
+  const errorTextEl = document.getElementById("error-text-email");
 
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   const value = emailEl.value.trim();
@@ -101,7 +101,7 @@ function validateEmail() {
   errorTextEl.innerText = errorName;
 }
 
-// 1. сделать валидацию почты с помощью RegExp (тырнет в помощь)
+// 1. !!сделать валидацию почты с помощью RegExp (тырнет в помощь)
 // 2. !!сделать alert() с текстом при прохождении валидации
 // 3. !!сделать рамку поля красным для каждого поля, если валидация провалена
 // 4. Вынести тексты ошибок в объекты и использовать вместо строк в самом коде
