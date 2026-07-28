@@ -1160,6 +1160,9 @@
   }
 
   .community__frame {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
     gap: 45px;
     padding: 4px 50px;
   }
@@ -1222,8 +1225,17 @@
   }
 
   .customer-section__container {
+    display: flex;
+    flex-direction: column;
     gap: 30px;
     margin-bottom: 20px;
+  }
+
+  .customer__frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .smith__text {
@@ -1245,7 +1257,9 @@
   }
 
   .community-updates__blocks {
-    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     margin-bottom: 33px;
   }
 
