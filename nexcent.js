@@ -112,6 +112,17 @@ function validateEmail() {
   return isValid;
 }
 
+const btnMenu = document.getElementById("Header__Button");
+const btnOffMenu = document.getElementById("Button__menu");
+const menu = document.getElementById("Menu");
+btnMenu.addEventListener("click", function () {
+  menu.setAttribute("aria-hidden", "false");
+});
+
+btnOffMenu.addEventListener("click", function () {
+  menu.setAttribute("aria-hidden", "true");
+});
+
 // !!1. сделать валидацию почты с помощью RegExp (тырнет в помощь)
 // !!2. сделать alert() с текстом при прохождении валидации
 // !!3. сделать рамку поля красным для каждого поля, если валидация провалена
