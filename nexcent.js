@@ -66,7 +66,8 @@ registerBtn.addEventListener("click", function () {
 
 function validateName() {
   const nameEl = document.getElementById("your-name");
-  const length = nameEl.value.length;
+  const value = nameEl.value.trim();
+  const length = value.length;
   const errorTextEl = document.getElementById("error-text");
 
   let errorName = "";
@@ -123,9 +124,66 @@ btnOffMenu.addEventListener("click", function () {
   menu.setAttribute("aria-hidden", "true");
 });
 
-// !!1. сделать валидацию почты с помощью RegExp (тырнет в помощь)
+// (тырнет в помощь)
+// !!1. сделать валидацию почты с помощью RegExp
 // !!2. сделать alert() с текстом при прохождении валидации
 // !!3. сделать рамку поля красным для каждого поля, если валидация провалена
 // 4. Вынести тексты ошибок в объекты и использовать вместо строк в самом коде
-// *5. Подключить и использовать библиотеку micromodal или использовать нативный тег <dialog>
+// *5. Использовать люые средства для создания модалки (библиотеки или <dialog>)
 // !!*6. Начать делать адаптацию (сделать хотя бы одну секцию)
+
+// WRITE YOUR CODE HERE
+
+/*
+const value = ["here", "trim", "beez"];
+value.forEach((value, index, array) => {
+  console.log(value, index, array);
+});
+let a = value.map((value) => {
+  console.log(value);
+  return value.length;
+});
+console.log(a);
+
+let mas = [
+  function () {
+    console.log("1");
+  },
+  function () {
+    console.log("2");
+  },
+  function () {
+    console.log("3");
+  },
+];
+mas.forEach(function iter(value) {
+  value();
+});
+
+let num = [1, 2, 3];
+let Num = num.reduce(function (accumulator, value) {
+  console.log({ accumulator, value });
+  return accumulator + value;
+}, 0);
+
+function beez1(string) {
+  return string.length > 0;
+}
+function beez2(string) {
+  return string.length <= 20;
+}
+
+let val = [
+  beez1,
+  beez2,
+];
+const TEST_DATA = "somes".repeat(4);
+let val2 = val.reduce(function (acc, value) {
+  if (acc == false) {
+    return false;
+  }
+
+  return value(TEST_DATA);
+}, true);
+console.log(`--> validation for '${TEST_DATA}'  was`, val2);
+*/
