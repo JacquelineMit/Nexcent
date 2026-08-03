@@ -664,15 +664,16 @@
 .modal {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   min-width: 500px;
   min-height: 200px;
   background-color: var(--white);
   border-radius: 5%;
   border: 2px solid var(--primary);
   padding: 30px 30px;
-  margin: 100px 400px;
 }
 
 .modal[aria-hidden="false"] {
@@ -1055,6 +1056,9 @@
   }
 
   .modal {
+    top: 70%;
+    left: 50%;
+    transform: translate(-125%, -125%);
     min-width: 375px;
     min-height: 150px;
     padding: 22px 22px;
@@ -1169,6 +1173,7 @@
   .hero-section__container {
     height: 312px;
     gap: 54px;
+    padding: 20px 20px;
     margin-bottom: 21px;
   }
 
@@ -1240,14 +1245,16 @@
   }
 
   .achievements-section__container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
     gap: 25px;
-    padding: 12px 0;
     margin-bottom: 20px;
   }
-
   .section-heading__title {
+    text-align: center;
     margin-bottom: 5px;
-    margin-right: 46px;
+    margin-right: 0;
   }
 
   .counts__block__img {
@@ -1286,7 +1293,17 @@
     justify-content: center;
   }
 
+  .customer__frame__text__info {
+    text-align: center;
+  }
+  .customer__frame__smith {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .smith__text {
+    text-align: center;
     margin-bottom: 14px;
   }
 
@@ -1309,6 +1326,34 @@
     flex-direction: column;
     gap: 30px;
     margin-bottom: 33px;
+  }
+
+  .section-unlock__container {
+    padding: 30px 0;
+  }
+
+  .unlock__frame__text__title {
+    text-align: center;
+  }
+
+  .unlock__ill {
+    display: none;
+  }
+
+  .calender-section__container {
+    padding: 30px 0;
+  }
+
+  .calender__frame__text__title {
+    text-align: center;
+  }
+
+  .calender__ill {
+    display: none;
+  }
+
+  .customer-section__ill {
+    display: none;
   }
 
   .block {
