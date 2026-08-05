@@ -43,16 +43,29 @@ window.addEventListener("scroll", function () {
   }
 });
 
-const button_in = document.getElementById("register-btn");
-const button_off = document.querySelector(".modal__btn");
-const modal = document.querySelector(".modal");
-button_in.addEventListener("click", function () {
-  modal.setAttribute("aria-hidden", "false");
-});
+const modal = document.getElementById("modal");
+const openModalBtn = document.getElementById("register-btn");
+const closeModalBtn = document.getElementById("modal-close");
 
-button_off.addEventListener("click", function () {
-  modal.setAttribute("aria-hidden", "true");
-});
+if (openModalBtn) {
+  openModalBtn.addEventListener("click", () => {
+    if (typeof modal.showModal === "function") {
+      modal.showModal();
+    } else {
+      modal.setAttribute("open", "");
+    }
+  });
+}
+
+if (closeModalBtn) {
+  closeModalBtn.addEventListener("click", () => {
+    if (typeof modal.close === "function") {
+      modal.close();
+    } else {
+      modal.removeAttribute("open");
+    }
+  });
+}
 
 const registerBtn = document.getElementById("modal-btn");
 registerBtn.addEventListener("click", function () {
@@ -130,7 +143,7 @@ btnOffMenu.addEventListener("click", function () {
 // !!1. сделать валидацию почты с помощью RegExp
 // !!2. сделать alert() с текстом при прохождении валидации
 // !!3. сделать рамку поля красным для каждого поля, если валидация провалена
-// 4. Вынести тексты ошибок в объекты и использовать вместо строк в самом коде
+// !!4. Вынести тексты ошибок в объекты и использовать вместо строк в самом коде
 // *5. Использовать люые средства для создания модалки (библиотеки или <dialog>)
 // !!*6. Начать делать адаптацию (сделать хотя бы одну секцию)
 
@@ -188,4 +201,15 @@ let val2 = val.reduce(function (acc, value) {
   return value(TEST_DATA);
 }, true);
 console.log(`--> validation for '${TEST_DATA}'  was`, val2);
+
+const button_in = document.getElementById("register-btn");
+const button_off = document.querySelector(".modal__btn");
+const modal = document.querySelector(".modal");
+button_in.addEventListener("click", function () {
+  modal.setAttribute("aria-hidden", "false");
+});
+
+button_off.addEventListener("click", function () {
+  modal.setAttribute("aria-hidden", "true");
+});
 */

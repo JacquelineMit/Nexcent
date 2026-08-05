@@ -452,8 +452,8 @@
       <button class="scroll-btn" tabindex="-1">Наверх</button>
     </div>
 
-    <div id="modal" class="modal" aria-hidden="true">
-      <button class="modal__btn" aria-label="Close">X</button>
+    <dialog id="modal" class="modal" aria-hidden="true">
+      <button id="modal-close" class="modal__btn" aria-label="Close">X</button>
       <div class="modal__section">
         <p class="modal__section-title">Registration</p>
         <div>
@@ -465,6 +465,7 @@
           <p id="error-text-email" class="error-text"></p>
         </div>
         <button id="modal-btn" class="modal__section-btn" type="submit">Register</button>
-    </div>
+      </div>
+    </dialog>
   </body>
 </html>
