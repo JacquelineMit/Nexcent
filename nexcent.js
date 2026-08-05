@@ -94,13 +94,15 @@ function validateEmail() {
 
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   const value = emailEl.value.trim();
-
+  let errorNoneName = "*Please enter your email!";
+  let errorIncorrect = "*Incorrect email format!";
   let errorName = "";
+
   if (value.length === 0) {
-    errorName = "*Please enter your email!";
+    errorName = errorNoneName;
     emailEl.classList.add("invalid");
   } else if (!emailRegex.test(value)) {
-    errorName = "*Incorrect email format!";
+    errorName = errorIncorrect;
     emailEl.classList.add("invalid");
   } else {
     emailEl.classList.remove("invalid");
