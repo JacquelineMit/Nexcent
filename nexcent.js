@@ -48,6 +48,7 @@ const openModalBtn = document.getElementById("register-btn");
 const closeModalBtn = document.getElementById("modal-close");
 
 if (openModalBtn) {
+  console.log(openModalBtn);
   openModalBtn.addEventListener("click", () => {
     if (typeof modal.showModal === "function") {
       modal.showModal();
@@ -139,17 +140,6 @@ btnOffMenu.addEventListener("click", function () {
   menu.setAttribute("aria-hidden", "true");
 });
 
-// (тырнет в помощь)
-// !!1. сделать валидацию почты с помощью RegExp
-// !!2. сделать alert() с текстом при прохождении валидации
-// !!3. сделать рамку поля красным для каждого поля, если валидация провалена
-// !!4. Вынести тексты ошибок в объекты и использовать вместо строк в самом коде
-// *5. Использовать люые средства для создания модалки (библиотеки или <dialog>)
-// !!*6. Начать делать адаптацию (сделать хотя бы одну секцию)
-
-// WRITE YOUR CODE HERE
-
-/*
 const value = ["here", "trim", "beez"];
 value.forEach((value, index, array) => {
   console.log(value, index, array);
@@ -188,10 +178,7 @@ function beez2(string) {
   return string.length <= 20;
 }
 
-let val = [
-  beez1,
-  beez2,
-];
+let val = [beez1, beez2];
 const TEST_DATA = "somes".repeat(4);
 let val2 = val.reduce(function (acc, value) {
   if (acc == false) {
@@ -202,14 +189,34 @@ let val2 = val.reduce(function (acc, value) {
 }, true);
 console.log(`--> validation for '${TEST_DATA}'  was`, val2);
 
-const button_in = document.getElementById("register-btn");
-const button_off = document.querySelector(".modal__btn");
-const modal = document.querySelector(".modal");
-button_in.addEventListener("click", function () {
-  modal.setAttribute("aria-hidden", "false");
-});
+const minLength = (value) => value.length > 2 || "ERROR";
+const maxLength = (value) => value.length < 100 || "ERROR";
+const nameRules = [minLength, maxLength];
 
-button_off.addEventListener("click", function () {
-  modal.setAttribute("aria-hidden", "true");
-});
-*/
+function validate(value, ...rules) {
+  return rules.reduce(function (result, rule) {
+    if (typeof result == "string") {
+      return result;
+    } else {
+      return rule(value);
+    }
+  }, true);
+}
+
+const value = validate(
+  "some str",
+  (value) => value.length > 2 || "ERROR",
+  (value) => value.length < 100 || "ERROR",
+);
+
+const arrowFunction = (arg1) => {
+  /** do somethind */
+};
+function defaultFunction(arg1) {
+  /** do somethind */
+}
+
+const arrowFunction2 = (arg1) => "Some string";
+function defaultFunction2(arg1) {
+  return "Some string";
+}
