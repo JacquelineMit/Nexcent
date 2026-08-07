@@ -667,6 +667,7 @@
 }
 
 .modal {
+  display: block;
   position: fixed;
   z-index: 2;
   top: 50%;

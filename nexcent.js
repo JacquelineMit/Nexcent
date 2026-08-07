@@ -46,26 +46,24 @@ window.addEventListener("scroll", function () {
 const modal = document.getElementById("modal");
 const openModalBtn = document.getElementById("register-btn");
 const closeModalBtn = document.getElementById("modal-close");
+const openModalBtnMenu = document.getElementById("register-btn-menu");
+
+function openModal() {
+  const modal = document.getElementById("modal");
+  modal.open();
+}
+function closeModal() {
+  const modal = document.getElementById("modal");
+  modal.close();
+}
 
 if (openModalBtn) {
-  console.log(openModalBtn);
-  openModalBtn.addEventListener("click", () => {
-    if (typeof modal.showModal === "function") {
-      modal.showModal();
-    } else {
-      modal.setAttribute("open", "");
-    }
-  });
+  openModalBtn.addEventListener("click", openModal);
+  openModalBtnMenu.addEventListener("click", openModal);
 }
 
 if (closeModalBtn) {
-  closeModalBtn.addEventListener("click", () => {
-    if (typeof modal.close === "function") {
-      modal.close();
-    } else {
-      modal.removeAttribute("open");
-    }
-  });
+  closeModalBtn.addEventListener("click", closeModal);
 }
 
 const registerBtn = document.getElementById("modal-btn");
