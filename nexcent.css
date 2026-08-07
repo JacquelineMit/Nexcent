@@ -592,6 +592,7 @@
 .footer-big__company {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 27px;
   margin-bottom: 55px;
 }
@@ -611,6 +612,10 @@
   margin-right: 121px;
 }
 
+.company__social {
+  display: flex;
+  gap: 11px;
+}
 .footer-big__links {
   margin-bottom: 44px;
   display: flex;
@@ -662,7 +667,6 @@
 }
 
 .modal {
-  display: none;
   position: fixed;
   z-index: 2;
   top: 50%;
@@ -674,10 +678,6 @@
   border-radius: 5%;
   border: 2px solid var(--primary);
   padding: 30px 30px;
-}
-
-.modal[aria-hidden="false"] {
-  display: block;
 }
 
 .modal__btn {
@@ -1105,8 +1105,7 @@
   }
 
   .header__menu {
-    display: block;
-    padding: 25px 0;
+    padding: 25px 20px;
   }
 
   .header__button {
@@ -1141,13 +1140,13 @@
   }
 
   .icon-nexcent {
-    width: 25px;
-    height: 8px;
+    width: 30px;
+    height: 12px;
   }
 
   .icon-nexcent-string {
-    width: 58px;
-    height: 8px;
+    width: 65px;
+    height: 16px;
   }
 
   .menu {
@@ -1372,19 +1371,39 @@
   }
 
   .footer-big__container {
-    gap: 44px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     padding-top: 22px;
     padding-left: 66px;
     padding-right: 66px;
   }
 
   .footer-big__company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
   }
 
+  .company__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .company__text__dop {
+    font: var(--f-body-2);
+  }
   .company__social {
-    margin-right: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .input__btn {
+    width: 6px;
+    height: 6px;
+    margin-bottom: 5px;
   }
 
   .footer-big__links {
