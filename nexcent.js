@@ -76,6 +76,18 @@ registerBtn.addEventListener("click", function () {
   }
 });
 
+const MESSAGES = {
+  name: {
+    tooShort: "Your name is small!",
+    tooLong: "Your name is big!",
+    required: "",
+  },
+  email: {
+    required: "Please enter your email!",
+    invalid: "Incorrect email format!",
+  },
+};
+
 function validateName() {
   const nameEl = document.getElementById("your-name");
   const value = nameEl.value.trim();
@@ -106,15 +118,13 @@ function validateEmail() {
 
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   const value = emailEl.value.trim();
-  let errorNoneName = "*Please enter your email!";
-  let errorIncorrect = "*Incorrect email format!";
   let errorName = "";
 
   if (value.length === 0) {
-    errorName = errorNoneName;
+    errorName = MESSAGES.email.required;
     emailEl.classList.add("invalid");
   } else if (!emailRegex.test(value)) {
-    errorName = errorIncorrect;
+    errorName = MESSAGES.email.invalid;
     emailEl.classList.add("invalid");
   } else {
     emailEl.classList.remove("invalid");
