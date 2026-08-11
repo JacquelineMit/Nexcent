@@ -148,6 +148,7 @@ btnOffMenu.addEventListener("click", function () {
   menu.setAttribute("aria-hidden", "true");
 });
 
+/**
 const value = ["here", "trim", "beez"];
 value.forEach((value, index, array) => {
   console.log(value, index, array);
@@ -216,6 +217,7 @@ const value = validate(
   (value) => value.length > 2 || "ERROR",
   (value) => value.length < 100 || "ERROR",
 );
+**/
 
 const arrowFunction = (arg1) => {
   /** do somethind */
