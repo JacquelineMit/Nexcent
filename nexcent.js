@@ -218,15 +218,3 @@ const value = validate(
   (value) => value.length < 100 || "ERROR",
 );
 **/
-
-const arrowFunction = (arg1) => {
-  /** do somethind */
-};
-function defaultFunction(arg1) {
-  /** do somethind */
-}
-
-const arrowFunction2 = (arg1) => "Some string";
-function defaultFunction2(arg1) {
-  return "Some string";
-}
