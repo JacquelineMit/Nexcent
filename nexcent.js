@@ -50,7 +50,7 @@ const openModalBtnMenu = document.getElementById("register-btn-menu");
 
 function openModal() {
   const modal = document.getElementById("modal");
-  modal.open();
+  modal.showModal();
 }
 function closeModal() {
   const modal = document.getElementById("modal");
