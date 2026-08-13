@@ -1,4 +1,4 @@
-// Находим элементы
+/** start Слайдер */
 const slides = document.querySelectorAll(".slides");
 const buttons = document.querySelectorAll(".slider-bullets__bullet");
 
@@ -17,7 +17,9 @@ for (let index = 0; index < buttons.length; index++) {
     buttons[index].classList.add("slider-bullets__bullet--active");
   });
 }
+/** end Слайдер */
 
+/** start Кнопка скролла */
 const scroll_btn = document.querySelector(".scroll-btn");
 scroll_btn.addEventListener("click", function () {
   window.scrollTo({
@@ -25,7 +27,9 @@ scroll_btn.addEventListener("click", function () {
     behavior: "smooth",
   });
 });
+/** end Кнопка скролла */
 
+/** start Шапка */
 const scrolls = document.getElementById("scroll-btn");
 const header = document.getElementById("header");
 
@@ -42,7 +46,9 @@ window.addEventListener("scroll", function () {
     scrolls.classList.remove("scroll--active");
   }
 });
+/** end Шапка */
 
+/** start Модалка */
 const modal = document.getElementById("modal");
 const openModalBtn = document.getElementById("register-btn");
 const closeModalBtn = document.getElementById("modal-close");
@@ -65,7 +71,9 @@ if (openModalBtn) {
 if (closeModalBtn) {
   closeModalBtn.addEventListener("click", closeModal);
 }
+/** end Модалка */
 
+/** start Валидация в модалке */
 const registerBtn = document.getElementById("modal-btn");
 registerBtn.addEventListener("click", function () {
   const isNameValid = validateName();
@@ -136,6 +144,7 @@ function validateEmail() {
   const isValid = errorName === "";
   return isValid;
 }
+/** start Валидация в модалке  */
 
 const btnMenu = document.getElementById("Header__Button");
 const btnOffMenu = document.getElementById("Button__menu");
