@@ -78,8 +78,13 @@ const registerBtn = document.getElementById("modal-btn");
 registerBtn.addEventListener("click", function () {
   const isNameValid = validateName();
   const isEmailValid = validateEmail();
+  const nameEl = document.getElementById("your-name");
+  const value = nameEl.value.trim();
+  const emailEl = document.getElementById("your-email");
+  const valueEmail = emailEl.value.trim();
 
   if (isNameValid && isEmailValid) {
+    sendUser(value, valueEmail);
     alert("Validation was successful!");
   }
 });
@@ -227,3 +232,22 @@ const value = validate(
   (value) => value.length < 100 || "ERROR",
 );
 **/
+const url = "http://localhost:3000/health";
+function getData() {
+  fetch(url);
+}
+
+getData();
+
+function sendUser(name, email) {
+  fetch("http://localhost:3000/send", {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ name: name, email: email }),
+  });
+}
+
+sendUser("aleks", "kfkfkffk");
