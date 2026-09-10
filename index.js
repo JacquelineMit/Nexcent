@@ -250,5 +250,3 @@ function sendUser(name, email) {
     body: JSON.stringify({ name: name, email: email }),
   });
 }
-
-sendUser("aleks", "kfkfkffk");
