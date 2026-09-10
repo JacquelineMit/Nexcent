@@ -240,12 +240,13 @@ function getData() {
 getData();
 
 function sendUser(name, email) {
-  fetch("http://localhost:3000/send", {
+  fetch("http://127.0.0.1:3000/send", {
     method: "POST",
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
     },
+    credentials: "include",
     body: JSON.stringify({ name: name, email: email }),
   });
 }
